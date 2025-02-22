@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cày Thuê Blox Fruits</title>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="firebase-config.js"></script>
+
+    <!-- Chèn CSS -->
+    <link rel="stylesheet" href="web-cay.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký cày thuê</h2>
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Tài khoản game">
+            <input type="password" id="password" placeholder="Mật khẩu">
+            <textarea id="note" placeholder="Nội dung yêu cầu"></textarea>
+            <button onclick="submitOrder()">Gửi yêu cầu</button>
+        </div>
+
+        <h2>Kiểm tra số dư</h2>
+        <div class="input-group">
+            <input type="text" id="checkUserId" placeholder="User ID">
+            <button onclick="checkBalance()">Kiểm tra</button>
+        </div>
+        <p id="balanceResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
